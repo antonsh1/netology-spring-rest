@@ -2,7 +2,6 @@ package ru.smartjava.rest.repo;
 
 import org.springframework.stereotype.Repository;
 import ru.smartjava.rest.enums.Authorities;
-import ru.smartjava.rest.interfaces.UserRepository;
 import ru.smartjava.rest.user.Person;
 
 import java.util.HashMap;
@@ -12,7 +11,7 @@ import java.util.Map;
 @Repository
 public class UserRepositoryImpl implements UserRepository {
 
-    Map<Person, List<Authorities>> repository = new HashMap<>() {
+    private final Map<Person, List<Authorities>> repository = new HashMap<>() {
         {
             put(new Person("Ivan", "testtest"), List.of(Authorities.READ));
             put(new Person("Olga", "12345678"), List.of(Authorities.READ, Authorities.WRITE));

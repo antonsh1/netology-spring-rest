@@ -5,7 +5,7 @@ import org.springframework.stereotype.Service;
 import ru.smartjava.rest.enums.Authorities;
 import ru.smartjava.rest.exceptions.InvalidCredentials;
 import ru.smartjava.rest.exceptions.UnauthorizedUser;
-import ru.smartjava.rest.interfaces.UserRepository;
+import ru.smartjava.rest.repo.UserRepository;
 
 import java.util.List;
 

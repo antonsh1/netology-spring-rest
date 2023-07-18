@@ -1,4 +1,4 @@
-package ru.smartjava.rest.interfaces;
+package ru.smartjava.rest.repo;
 
 import ru.smartjava.rest.enums.Authorities;
 
