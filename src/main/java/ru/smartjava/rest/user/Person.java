@@ -1,11 +1,20 @@
 package ru.smartjava.rest.user;
 
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 import java.util.Objects;
 
 public class Person {
 
+    @NotNull
+    @NotBlank
+    @Size(min = 3, max = 30)
     private String name;
 
+    @NotBlank
+    @NotNull
+    @Size(min = 8, max = 256)
     private String password;
 
     public Person(String name, String password) {
