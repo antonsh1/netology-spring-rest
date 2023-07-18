@@ -14,9 +14,9 @@ public class UserRepositoryImpl implements UserRepository {
 
     Map<Person, List<Authorities>> repository = new HashMap<>() {
         {
-            put(new Person("Ivan", "test"), List.of(Authorities.READ));
-            put(new Person("Olga", "123456"), List.of(Authorities.READ, Authorities.WRITE));
-            put(new Person("Nikita", "123"), List.of(Authorities.READ, Authorities.WRITE, Authorities.DELETE));
+            put(new Person("Ivan", "testtest"), List.of(Authorities.READ));
+            put(new Person("Olga", "12345678"), List.of(Authorities.READ, Authorities.WRITE));
+            put(new Person("Nikita", "test1234"), List.of(Authorities.READ, Authorities.WRITE, Authorities.DELETE));
         }
     };
 
