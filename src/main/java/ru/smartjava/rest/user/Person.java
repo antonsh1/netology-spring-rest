@@ -1,8 +1,5 @@
 package ru.smartjava.rest.user;
 
-import ru.smartjava.rest.enums.Authorities;
-
-import java.util.List;
 import java.util.Objects;
 
 public class Person {
@@ -11,12 +8,9 @@ public class Person {
 
     private String password;
 
-    private List<Authorities> authorities;
-
-    public Person(String name, String password, List<Authorities> authorities) {
+    public Person(String name, String password) {
         this.name = name;
         this.password = password;
-        this.authorities = authorities;
     }
 
     public Person() {
@@ -38,20 +32,12 @@ public class Person {
         this.password = password;
     }
 
-    public List<Authorities> getAuthorities() {
-        return authorities;
-    }
-
-    public void setAuthorities(List<Authorities> authorities) {
-        this.authorities = authorities;
-    }
 
     @Override
     public String toString() {
         return "Person{" +
                 "name='" + name + '\'' +
                 ", password='" + password + '\'' +
-                ", authorities=" + authorities +
                 '}';
     }
 
